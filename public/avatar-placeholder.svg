@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Avatar Placeholder</title>
+    <g id="Avatar-Placeholder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Background" fill="#F0F0F0" cx="100" cy="100" r="100"></circle>
+        <g id="Person" transform="translate(50.000000, 40.000000)" fill="#CCCCCC">
+            <circle id="Head" cx="50" cy="30" r="30"></circle>
+            <path d="M0,120 C0,80 100,80 100,120" id="Body"></path>
+        </g>
+    </g>
+</svg>

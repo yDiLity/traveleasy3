@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f0f0f0"/>
+  <rect x="0" y="0" width="800" height="600" fill="#e8f4f8"/>
+  <polygon points="400,50 700,300 400,550 100,300" fill="#d5e8f0" stroke="#a0c8e0" stroke-width="2"/>
+  <circle cx="400" cy="300" r="150" fill="#ffffff" stroke="#a0c8e0" stroke-width="2"/>
+  <rect x="350" y="450" width="100" height="50" fill="#ffffff" stroke="#a0c8e0" stroke-width="2"/>
+  <text x="400" y="80" font-family="Arial" font-size="24" text-anchor="middle" fill="#2980b9">Four Seasons Hotel Moscow</text>
+  <text x="400" y="300" font-family="Arial" font-size="18" text-anchor="middle" fill="#2980b9">Вид на Кремль</text>
+</svg>
