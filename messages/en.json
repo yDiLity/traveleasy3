@@ -1,0 +1,194 @@
+{
+  "common": {
+    "appName": "Trevelease",
+    "search": "Search",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "profile": "Profile",
+    "favorites": "Favorites",
+    "bookings": "My Bookings",
+    "details": "Details",
+    "pricePerNight": "$ / night",
+    "loading": "Loading...",
+    "error": "Error",
+    "notFound": "Not Found",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "addToFavorites": "Add to Favorites",
+    "removeFromFavorites": "Remove from Favorites",
+    "home": "Home",
+    "hotels": "Hotels"
+  },
+  "home": {
+    "title": "Find the Perfect Hotel for Your Journey",
+    "subtitle": "Compare prices, read reviews, and book the best hotels worldwide",
+    "searchTitle": "Search Hotels",
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Real reviews from travelers about our service",
+      "prevButton": "Previous testimonial",
+      "nextButton": "Next testimonial",
+      "goToTestimonial": "Go to testimonial",
+      "traveler": "Traveler",
+      "businessTraveler": "Business Traveler",
+      "blogger": "Blogger"
+    },
+    "popularDestinations": {
+      "title": "Popular Destinations",
+      "subtitle": "Explore the most popular cities and regions of Russia for your next journey",
+      "hotels": "hotels",
+      "explore": "Explore"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us",
+      "subtitle": "We make travel planning simple, safe, and enjoyable"
+    },
+    "features": {
+      "wideSelection": {
+        "title": "Wide Selection of Hotels",
+        "description": "Thousands of hotels worldwide with detailed descriptions and photos"
+      },
+      "timeSaving": {
+        "title": "Time Saving",
+        "description": "Quick search and price comparison for hotels in one place"
+      },
+      "verifiedReviews": {
+        "title": "Verified Reviews",
+        "description": "Real reviews from travelers help you make the right choice"
+      },
+      "convenientSearch": {
+        "title": "Convenient Search",
+        "description": "Find ideal accommodation options with our intuitive search and filters"
+      },
+      "secureBooking": {
+        "title": "Secure Booking",
+        "description": "Your data is protected, and bookings are confirmed instantly"
+      },
+      "timeSavingSearch": {
+        "title": "Time Saving",
+        "description": "Compare prices and conditions in one place without wasting time searching different sites"
+      },
+      "verifiedHotels": {
+        "title": "Verified Hotels",
+        "description": "We partner only with reliable hotels and apartments"
+      },
+      "bestPrices": {
+        "title": "Best Prices",
+        "description": "We guarantee competitive prices and regular special offers"
+      },
+      "support247": {
+        "title": "24/7 Support",
+        "description": "Our support team is always ready to help you with any questions"
+      }
+    }
+  },
+  "search": {
+    "location": "Location",
+    "locationPlaceholder": "Where do you want to go?",
+    "locationTypes": {
+      "city": "City",
+      "country": "Country",
+      "region": "Region"
+    },
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "filters": "Filters",
+    "price": "Price",
+    "rating": "Rating",
+    "accommodationType": "Accommodation Type",
+    "mealType": "Meal Type",
+    "amenities": "Amenities",
+    "searchResults": "Search Results",
+    "noResults": "No results for your query",
+    "tryAgain": "Try changing your search parameters",
+    "sort": "Sort",
+    "sortOptions": {
+      "priceAsc": "Price (low to high)",
+      "priceDesc": "Price (high to low)",
+      "rating": "Rating"
+    },
+    "accommodationTypes": {
+      "hotel": "Hotel",
+      "apartment": "Apartment",
+      "hostel": "Hostel",
+      "villa": "Villa",
+      "resort": "Resort"
+    },
+    "mealTypes": {
+      "none": "No meals",
+      "breakfast": "Breakfast",
+      "halfBoard": "Half Board",
+      "fullBoard": "Full Board",
+      "allInclusive": "All Inclusive"
+    }
+  },
+  "hotel": {
+    "description": "Description",
+    "amenities": "Amenities",
+    "reviews": "Reviews",
+    "location": "Location",
+    "address": "Address",
+    "distanceToCenter": "Distance to Center",
+    "book": "Book Now",
+    "noReviews": "No reviews yet",
+    "amenitiesList": {
+      "wifi": "Wi-Fi",
+      "parking": "Parking",
+      "pool": "Pool",
+      "gym": "Gym",
+      "restaurant": "Restaurant",
+      "spa": "Spa",
+      "airConditioning": "Air Conditioning",
+      "petFriendly": "Pet Friendly",
+      "conferenceRoom": "Conference Room",
+      "transfer": "Transfer"
+    }
+  },
+  "favorites": {
+    "title": "Favorite Hotels",
+    "empty": "You don't have any favorite hotels yet",
+    "emptyDescription": "Add hotels you like to favorites to find them quickly later",
+    "findHotels": "Find Hotels"
+  },
+  "auth": {
+    "loginTitle": "Login to Your Account",
+    "loginSubtitle": "Enter your credentials to login",
+    "registerTitle": "Register",
+    "registerSubtitle": "Create a new account",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "loginButton": "Login",
+    "registerButton": "Register",
+    "demoCredentials": "For demonstration use:",
+    "invalidCredentials": "Invalid email or password",
+    "loginRequired": "Login required"
+  },
+  "footer": {
+    "aboutCompany": "About Company",
+    "aboutUs": "About Us",
+    "careers": "Careers",
+    "news": "News",
+    "partnership": "Partnership",
+    "help": "Help",
+    "faq": "FAQ",
+    "support": "Support",
+    "contactUs": "Contact Us",
+    "useful": "Useful",
+    "blog": "Travel Blog",
+    "tips": "Travel Tips",
+    "popularDestinations": "Popular Destinations",
+    "subscription": "Subscription",
+    "subscriptionText": "Subscribe to our newsletter to receive news and special offers.",
+    "emailPlaceholder": "Your email",
+    "subscribe": "OK",
+    "copyright": "© 2025 Trevelease. All rights reserved."
+  }
+}

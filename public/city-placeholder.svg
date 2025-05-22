@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>City Placeholder</title>
+    <g id="City-Placeholder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F0F0F0" x="0" y="0" width="800" height="600"></rect>
+        <g id="Skyline" transform="translate(150.000000, 150.000000)" fill="#CCCCCC">
+            <rect id="Building1" x="0" y="100" width="80" height="200"></rect>
+            <rect id="Building2" x="100" y="50" width="80" height="250"></rect>
+            <rect id="Building3" x="200" y="150" width="80" height="150"></rect>
+            <rect id="Building4" x="300" y="0" width="80" height="300"></rect>
+            <rect id="Building5" x="400" y="100" width="80" height="200"></rect>
+            <rect id="Building6" x="500" y="75" width="80" height="225"></rect>
+        </g>
+        <text id="City-Image" font-family="Arial-BoldMT, Arial" font-size="36" font-weight="bold" fill="#999999">
+            <tspan x="290" y="450">City Image</tspan>
+        </text>
+    </g>
+</svg>

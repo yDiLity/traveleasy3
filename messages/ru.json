@@ -1,0 +1,286 @@
+{
+  "common": {
+    "appName": "Trevelease",
+    "search": "Поиск",
+    "login": "Войти",
+    "register": "Регистрация",
+    "logout": "Выйти",
+    "profile": "Профиль",
+    "favorites": "Избранное",
+    "bookings": "Мои бронирования",
+    "details": "Подробнее",
+    "pricePerNight": "₽ / ночь",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "notFound": "Не найдено",
+    "back": "Назад",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "submit": "Отправить",
+    "addToFavorites": "Добавить в избранное",
+    "removeFromFavorites": "Удалить из избранного",
+    "home": "Главная",
+    "hotels": "Отели"
+  },
+  "home": {
+    "title": "Найдите идеальный отель для вашего путешествия",
+    "subtitle": "Сравнивайте цены, читайте отзывы и бронируйте лучшие отели по всему миру",
+    "searchTitle": "Поиск отелей",
+    "testimonials": {
+      "title": "Что говорят наши клиенты",
+      "subtitle": "Отзывы реальных путешественников о нашем сервисе",
+      "prevButton": "Предыдущий отзыв",
+      "nextButton": "Следующий отзыв",
+      "goToTestimonial": "Перейти к отзыву",
+      "traveler": "Путешественник",
+      "businessTraveler": "Бизнес-путешественник",
+      "blogger": "Блогер"
+    },
+    "popularDestinations": {
+      "title": "Популярные направления",
+      "subtitle": "Исследуйте самые популярные города и регионы России для вашего следующего путешествия",
+      "hotels": "отелей",
+      "explore": "Исследовать",
+      "search": "Найти отели"
+    },
+    "whyChooseUs": {
+      "title": "Почему выбирают нас",
+      "subtitle": "Мы делаем планирование путешествий простым, безопасным и приятным"
+    },
+    "features": {
+      "wideSelection": {
+        "title": "Широкий выбор отелей",
+        "description": "Тысячи отелей по всему миру с подробным описанием и фотографиями"
+      },
+      "timeSaving": {
+        "title": "Экономия времени",
+        "description": "Быстрый поиск и сравнение цен на отели в одном месте"
+      },
+      "verifiedReviews": {
+        "title": "Проверенные отзывы",
+        "description": "Реальные отзывы от путешественников помогут сделать правильный выбор"
+      },
+      "convenientSearch": {
+        "title": "Удобный поиск",
+        "description": "Находите идеальные варианты размещения с помощью нашего интуитивного поиска и фильтров"
+      },
+      "secureBooking": {
+        "title": "Безопасное бронирование",
+        "description": "Ваши данные защищены, а бронирования подтверждаются мгновенно"
+      },
+      "timeSavingSearch": {
+        "title": "Экономия времени",
+        "description": "Сравнивайте цены и условия в одном месте, не тратя время на поиск по разным сайтам"
+      },
+      "verifiedHotels": {
+        "title": "Проверенные отели",
+        "description": "Мы сотрудничаем только с надежными отелями и апартаментами"
+      },
+      "bestPrices": {
+        "title": "Лучшие цены",
+        "description": "Гарантируем конкурентные цены и регулярные специальные предложения"
+      },
+      "support247": {
+        "title": "Поддержка 24/7",
+        "description": "Наша команда поддержки всегда готова помочь вам с любыми вопросами"
+      }
+    }
+  },
+  "search": {
+    "destination": "Направление",
+    "location": "Местоположение",
+    "locationPlaceholder": "Куда вы хотите поехать?",
+    "locationTypes": {
+      "city": "Город",
+      "country": "Страна",
+      "region": "Регион"
+    },
+    "checkIn": "Заезд",
+    "checkOut": "Выезд",
+    "guests": "Гости",
+    "filters": "Фильтры",
+    "price": "Цена",
+    "rating": "Рейтинг",
+    "accommodationType": "Тип размещения",
+    "mealType": "Тип питания",
+    "amenities": "Удобства",
+    "searchResults": "Результаты поиска",
+    "noResults": "Нет результатов для вашего запроса",
+    "tryDifferentSearch": "Попробуйте изменить параметры поиска",
+    "tryChangingFilters": "Попробуйте изменить параметры фильтрации",
+    "resetFilters": "Сбросить фильтры",
+    "sort": "Сортировать",
+    "found": "Найдено",
+    "hotels": "отелей",
+    "searchingHotels": "Поиск отелей...",
+    "advancedFilters": "Расширенные фильтры",
+    "priceRange": "Диапазон цен",
+    "min": "Мин",
+    "max": "Макс",
+    "minRating": "Минимальный рейтинг",
+    "stars": "Звезды отеля",
+    "any": "Любой",
+    "perNight": "за ночь",
+    "viewDetails": "Подробнее",
+    "specialOffer": "Спецпредложение",
+    "noMatchingResults": "Нет отелей, соответствующих фильтрам",
+    "showMap": "Показать на карте",
+    "map": "Карта",
+    "mapDescription": "Отели на карте. Нажмите на маркер для получения подробной информации.",
+    "sortOptions": {
+      "priceAsc": "Цена (по возрастанию)",
+      "priceDesc": "Цена (по убыванию)",
+      "rating": "Рейтинг"
+    },
+    "accommodationTypes": {
+      "hotel": "Отель",
+      "apartment": "Апартаменты",
+      "hostel": "Хостел",
+      "villa": "Вилла",
+      "resort": "Курортный отель",
+      "guesthouse": "Гостевой дом"
+    },
+    "mealTypes": {
+      "none": "Без питания",
+      "breakfast": "Завтрак",
+      "halfBoard": "Полупансион",
+      "fullBoard": "Полный пансион",
+      "allInclusive": "Всё включено"
+    },
+    "amenities": {
+      "wifi": "Wi-Fi",
+      "parking": "Парковка",
+      "pool": "Бассейн",
+      "gym": "Фитнес-центр",
+      "restaurant": "Ресторан",
+      "spa": "СПА-центр",
+      "airConditioning": "Кондиционер",
+      "petFriendly": "Размещение с животными",
+      "conferenceRoom": "Конференц-зал",
+      "transfer": "Трансфер"
+    }
+  },
+  "hotel": {
+    "description": "Описание",
+    "amenities": "Удобства",
+    "reviews": "Отзывы",
+    "location": "Расположение",
+    "address": "Адрес",
+    "distanceToCenter": "Расстояние до центра",
+    "book": "Забронировать",
+    "noReviews": "Отзывов пока нет",
+    "amenitiesList": {
+      "wifi": "Wi-Fi",
+      "parking": "Парковка",
+      "pool": "Бассейн",
+      "gym": "Фитнес-центр",
+      "restaurant": "Ресторан",
+      "spa": "СПА-центр",
+      "airConditioning": "Кондиционер",
+      "petFriendly": "Размещение с животными",
+      "conferenceRoom": "Конференц-зал",
+      "transfer": "Трансфер"
+    }
+  },
+  "favorites": {
+    "title": "Избранные отели",
+    "empty": "У вас пока нет избранных отелей",
+    "emptyDescription": "Добавляйте понравившиеся отели в избранное, чтобы быстро находить их позже",
+    "findHotels": "Найти отели"
+  },
+  "auth": {
+    "loginTitle": "Вход в аккаунт",
+    "loginSubtitle": "Введите свои учетные данные для входа",
+    "registerTitle": "Регистрация",
+    "registerSubtitle": "Создайте новый аккаунт",
+    "email": "Email",
+    "password": "Пароль",
+    "confirmPassword": "Подтвердите пароль",
+    "forgotPassword": "Забыли пароль?",
+    "noAccount": "Нет аккаунта?",
+    "alreadyHaveAccount": "Уже есть аккаунт?",
+    "loginButton": "Войти",
+    "registerButton": "Зарегистрироваться",
+    "demoCredentials": "Для демонстрации используйте:",
+    "invalidCredentials": "Неверный email или пароль",
+    "loginRequired": "Необходимо войти в систему"
+  },
+  "map": {
+    "loading": "Загрузка карты...",
+    "errorLoading": "Ошибка загрузки карты",
+    "viewDetails": "Подробнее"
+  },
+  "city": {
+    "cityNotFound": "Город не найден",
+    "backToHome": "Вернуться на главную",
+    "about": "О городе",
+    "hotels": "{{count}} отелей в этом городе"
+  },
+  "cityGallery": {
+    "previous": "Предыдущее изображение",
+    "next": "Следующее изображение",
+    "image": "Изображение"
+  },
+
+  "reviews": {
+    "title": "Отзывы",
+    "ratingDistribution": "Распределение оценок",
+    "categoryRatings": "Оценки по категориям",
+    "sortByDate": "По дате",
+    "sortByRating": "По оценке",
+    "allRatings": "Все оценки",
+    "stars": "звезд",
+    "noReviews": "Отзывов пока нет",
+    "showMore": "Показать еще {{count}} отзывов",
+    "showLess": "Свернуть",
+    "readMore": "Читать полностью",
+    "helpful": "Полезно",
+    "photos": "Фотографии",
+    "photo": "Фото",
+    "more": "еще",
+    "verified": "Проверено",
+    "category": {
+      "location": "Расположение",
+      "cleanliness": "Чистота",
+      "service": "Обслуживание",
+      "value": "Цена/качество",
+      "comfort": "Комфорт"
+    },
+    "stayType": {
+      "business": "Деловая поездка",
+      "leisure": "Отдых",
+      "family": "Семейный отдых",
+      "couple": "Романтическая поездка",
+      "solo": "Индивидуальная поездка",
+      "other": "Другое"
+    },
+    "writeReview": "Написать отзыв",
+    "yourRating": "Ваша оценка",
+    "yourReview": "Ваш отзыв",
+    "reviewTitle": "Заголовок отзыва",
+    "reviewComment": "Комментарий",
+    "addPhotos": "Добавить фотографии",
+    "submitReview": "Отправить отзыв"
+  },
+
+  "footer": {
+    "aboutCompany": "О компании",
+    "aboutUs": "О нас",
+    "careers": "Карьера",
+    "news": "Новости",
+    "partnership": "Партнерство",
+    "help": "Помощь",
+    "faq": "Частые вопросы",
+    "support": "Служба поддержки",
+    "contactUs": "Связаться с нами",
+    "useful": "Полезное",
+    "blog": "Блог о путешествиях",
+    "tips": "Советы путешественникам",
+    "popularDestinations": "Популярные направления",
+    "subscription": "Подписка",
+    "subscriptionText": "Подпишитесь на нашу рассылку, чтобы получать новости и специальные предложения.",
+    "emailPlaceholder": "Ваш email",
+    "subscribe": "ОК",
+    "copyright": "© 2025 Trevelease. Все права защищены."
+  }
+}

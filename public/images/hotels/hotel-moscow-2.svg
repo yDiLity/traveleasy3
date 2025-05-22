@@ -1,0 +1,7 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#e8f4f8"/>
+  <text x="400" y="300" font-family="Arial" font-size="24" text-anchor="middle" fill="#336699">Отель Москва 2</text>
+  <rect x="300" y="320" width="200" height="120" fill="#c0d8e8"/>
+  <rect x="340" y="380" width="40" height="60" fill="#6699cc"/>
+  <rect x="420" y="380" width="40" height="60" fill="#6699cc"/>
+</svg>
