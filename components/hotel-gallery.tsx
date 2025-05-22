@@ -16,7 +16,7 @@ export function HotelGallery({ images, hotelName }: HotelGalleryProps) {
   const [hotelImages, setHotelImages] = useState<string[]>(images)
   const [isLoading, setIsLoading] = useState(true)
 
-  // Загружаем изображения отеля из API Unsplash
+  // Загружаем изображения отеля из API Pexels
   useEffect(() => {
     // Используем переданные изображения
     if (images.length > 0) {

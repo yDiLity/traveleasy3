@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
-import { getHotelImages as getUnsplashHotelImages, getCityImages as getUnsplashCityImages, getLandmarkImages as getUnsplashLandmarkImages } from '@/services/unsplash-api-service'
-import { getHotelImages as getPexelsHotelImages, getCityImages as getPexelsCityImages, getLandmarkImages as getPexelsLandmarkImages } from '@/services/pexels-api-service'
+import { getHotelImages, getCityImages, getLandmarkImages } from '@/services/pexels-api-service'
 import { API_KEYS } from '@/config/api-config'
 
 export async function GET(request: Request) {
@@ -19,13 +18,12 @@ export async function GET(request: Request) {
     )
   }
 
-  // Проверяем наличие API ключей
-  const unsplashApiKey = API_KEYS.UNSPLASH_API_KEY
+  // Проверяем наличие API ключа Pexels
   const pexelsApiKey = API_KEYS.PEXELS_API_KEY
 
-  if (!unsplashApiKey && !pexelsApiKey) {
+  if (!pexelsApiKey) {
     return NextResponse.json(
-      { error: 'No image API keys are configured' },
+      { error: 'Pexels API key is not configured' },
       { status: 500 }
     )
   }
@@ -33,39 +31,19 @@ export async function GET(request: Request) {
   try {
     let images: string[] = []
 
-    // Получаем изображения в зависимости от типа
-    // Сначала пробуем Pexels API, если он настроен
-    if (pexelsApiKey) {
-      switch (type) {
-        case 'hotel':
-          images = await getPexelsHotelImages(query, count, pexelsApiKey)
-          break
-        case 'city':
-          images = await getPexelsCityImages(query, count, pexelsApiKey)
-          break
-        case 'landmark':
-          images = await getPexelsLandmarkImages(query, count, pexelsApiKey)
-          break
-        default:
-          images = await getPexelsHotelImages(query, count, pexelsApiKey)
-      }
-    }
-
-    // Если Pexels не вернул результатов или не настроен, пробуем Unsplash
-    if (images.length === 0 && unsplashApiKey) {
-      switch (type) {
-        case 'hotel':
-          images = await getUnsplashHotelImages(query, count, unsplashApiKey)
-          break
-        case 'city':
-          images = await getUnsplashCityImages(query, count, unsplashApiKey)
-          break
-        case 'landmark':
-          images = await getUnsplashLandmarkImages(query, count, unsplashApiKey)
-          break
-        default:
-          images = await getUnsplashHotelImages(query, count, unsplashApiKey)
-      }
+    // Получаем изображения в зависимости от типа с помощью Pexels API
+    switch (type) {
+      case 'hotel':
+        images = await getHotelImages(query, count, pexelsApiKey)
+        break
+      case 'city':
+        images = await getCityImages(query, count, pexelsApiKey)
+        break
+      case 'landmark':
+        images = await getLandmarkImages(query, count, pexelsApiKey)
+        break
+      default:
+        images = await getHotelImages(query, count, pexelsApiKey)
     }
 
     // Если изображения не найдены, возвращаем пустой массив

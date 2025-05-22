@@ -4,18 +4,11 @@ const withNextIntl = require('next-intl/plugin')('./i18n.ts');
 const nextConfig = {
   images: {
     domains: [
-      'images.unsplash.com',
-      'plus.unsplash.com',
-      'api.unsplash.com',
       'images.pexels.com',
       'api.pexels.com',
       'localhost'
     ],
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**.unsplash.com',
-      },
       {
         protocol: 'https',
         hostname: '**.pexels.com',
@@ -28,8 +21,8 @@ const nextConfig = {
     unoptimized: true,
   },
   env: {
-    UNSPLASH_API_KEY: process.env.UNSPLASH_API_KEY,
     PEXELS_API_KEY: process.env.PEXELS_API_KEY,
+    GOOGLE_MAPS_API_KEY: process.env.GOOGLE_MAPS_API_KEY,
   },
   // Отключаем строгий режим для решения проблемы с бесконечной компиляцией
   reactStrictMode: false,

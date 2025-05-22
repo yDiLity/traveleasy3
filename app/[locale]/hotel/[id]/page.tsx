@@ -2,8 +2,7 @@
 
 import { HotelDetails } from '@/components/hotel-details'
 import { notFound } from 'next/navigation'
-import { useTranslations } from 'next-intl'
-import React from 'react'
+import { useParams } from 'next/navigation'
 
 interface HotelPageProps {
   params: {
@@ -11,11 +10,10 @@ interface HotelPageProps {
   }
 }
 
-export default function HotelPage({ params }: HotelPageProps) {
-  // Используем React.use() для доступа к параметрам маршрута
-  const unwrappedParams = React.use(params)
-  const { id } = unwrappedParams
-  const t = useTranslations()
+export default function HotelPage() {
+  // Используем useParams для доступа к параметрам маршрута
+  const params = useParams()
+  const id = params.id as string
 
   if (!id) {
     notFound()

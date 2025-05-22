@@ -56,10 +56,11 @@ export async function getHotelImages(
       query + ' hotel'
     )}&per_page=${count}&orientation=landscape`;
 
-    // Выполняем запрос к API
+    // Выполняем запрос к API с правильным форматом заголовка
+    console.log('Using Pexels API key:', apiKey.substring(0, 10) + '...');
     const response = await fetch(url, {
       headers: {
-        Authorization: apiKey,
+        Authorization: `${apiKey}`,
       },
     });
 
@@ -105,10 +106,11 @@ export async function getCityImages(
       cityName + ' city skyline'
     )}&per_page=${count}&orientation=landscape`;
 
-    // Выполняем запрос к API
+    // Выполняем запрос к API с правильным форматом заголовка
+    console.log('Using Pexels API key:', apiKey.substring(0, 10) + '...');
     const response = await fetch(url, {
       headers: {
-        Authorization: apiKey,
+        Authorization: `${apiKey}`,
       },
     });
 
@@ -154,10 +156,11 @@ export async function getLandmarkImages(
       cityName + ' landmarks'
     )}&per_page=${count}&orientation=landscape`;
 
-    // Выполняем запрос к API
+    // Выполняем запрос к API с правильным форматом заголовка
+    console.log('Using Pexels API key:', apiKey.substring(0, 10) + '...');
     const response = await fetch(url, {
       headers: {
-        Authorization: apiKey,
+        Authorization: `${apiKey}`,
       },
     });
 
