@@ -1,56 +1,23 @@
-import { NextRequest, NextResponse } from 'next/server';
+import createMiddleware from 'next-intl/middleware';
 import { locales, defaultLocale } from './i18n/settings';
 
-// Функция для получения локали из куки
-export function getLocale(request: NextRequest) {
-  // Проверяем локаль в URL
-  const pathname = request.nextUrl.pathname;
-  const pathnameLocale = locales.find(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  );
+// Создаем middleware с помощью next-intl
+export default createMiddleware({
+  // Список поддерживаемых локалей
+  locales: locales,
 
-  if (pathnameLocale) return pathnameLocale;
+  // Локаль по умолчанию
+  defaultLocale: defaultLocale,
 
-  // Используем локаль по умолчанию
-  return defaultLocale;
-}
+  // Добавлять префикс локали только когда она отличается от локали по умолчанию
+  localePrefix: 'as-needed',
 
-export default function middleware(request: NextRequest) {
-  const pathname = request.nextUrl.pathname;
+  // Функция для определения локали из запроса
+  localeDetection: true
+});
 
-  // Пропускаем API и статические файлы
-  if (
-    pathname.startsWith('/api') ||
-    pathname.startsWith('/_next') ||
-    pathname.includes('.')
-  ) {
-    return NextResponse.next();
-  }
-
-  // Получаем локаль
-  const locale = getLocale(request);
-  const pathnameHasLocale = locales.some(
-    (loc) => pathname.startsWith(`/${loc}/`) || pathname === `/${loc}`
-  );
-
-  // Если локаль уже есть в URL, пропускаем
-  if (pathnameHasLocale) {
-    return NextResponse.next();
-  }
-
-  // Если локаль по умолчанию, не добавляем префикс
-  if (locale === defaultLocale) {
-    return NextResponse.next();
-  }
-
-  // Добавляем локаль в URL
-  const url = request.nextUrl.clone();
-  url.pathname = `/${locale}${pathname.startsWith('/') ? pathname : `/${pathname}`}`;
-
-  return NextResponse.redirect(url);
-}
-
+// Конфигурация для Next.js middleware
 export const config = {
-  // Применяем middleware ко всем маршрутам
-  matcher: ['/((?!api|_next|.*\\..*).*)']
+  // Применяем middleware ко всем маршрутам, кроме API, статических файлов и т.д.
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|images|.*\\..*).*)']
 };
